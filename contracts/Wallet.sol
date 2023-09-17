@@ -7,7 +7,6 @@ contract Wallet {
     constructor() {}
 
     function deposit(uint _amount) public payable {
-        require(_amount >= msg.value, "Ether sent must be equal to amount");
         balance += _amount;
     }
 
